@@ -1,0 +1,106 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+header {
+  background-image: url(/src/Rectangle\ 482.svg);
+}
+header img {
+  margin-left: 50px;
+  margin-top: 54px;
+  margin-bottom: 72px;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#content-main {
+  background-color: #fcb823;
+  padding: 22px 22px 22px 160px;
+  border-radius: 0px 30px 30px 0px;
+}
+
+#content-text {
+  width: 350px;
+}
+
+#content-text p {
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#content-text h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+#content-main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin-left: 6rem;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+form input,
+select {
+  height: 41px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 5px;
+  width: 120%;
+  color: #ababab;
+}
+
+form input {
+  margin-bottom: 24px;
+}
+
+form input::placeholder {
+  color: #ababab;
+  padding-left: 1rem;
+}
+
+form select:nth-child(2) {
+  margin-left: 1.8rem;
+}
+
+.form-flex {
+  display: flex;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: column;
+}
+
+.unidade {
+  margin-left: 30px;
+}
+
+/* DPS FINALIZAR */
+
+input[type="radio"] {
+  height: 1rem;
+}

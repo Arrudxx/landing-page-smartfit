@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Fit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="Header">
+      <img src="./src/Logo horizontal fundo preto.svg" alt="Logo SmartFit" />
+    </header>
+
+    <section id="content">
+      <div id="content-main">
+        <div id="content-text">
+          <p>
+            Que tal ficar por<br />
+            dentro de todas as
+          </p>
+          <h1>novidades e promoções da Smart Fit?</h1>
+        </div>
+        <img src="./src/02_Alpha_Alta 1.png" alt="imagem" />
+      </div>
+      <form>
+        <label for="name">Nome completo *</label>
+        <input type="text" id="name" name="name" placeholder="Digite aqui..." />
+
+        <label for="email">E-mail: *</label>
+        <div class="form-flex">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite aqui..."
+          />
+          <select name="email" id="email-prefixo">
+            <option value="hotmail">@gmail.com</option>
+            <option value="hotmail">@hotmail.com</option>
+            <option value="hotmail">@outlook.com</option>
+            <option value="hotmail">@yahoo.com</option>
+          </select>
+        </div>
+
+        <div class="form-flex">
+          <label for="estado"
+            >Estado *
+            <select name="estado" id="estado">
+              <option value="escolha">Escolha</option>
+              <option value="estado2">Unidade 1</option>
+              <option value="estado3">Unidade 2</option>
+            </select>
+          </label>
+          <label for="unidade" class="unidade"
+            >Unidade *
+            <select name="unidade" class="unidade">
+              <option value="escolha">Escolha</option>
+              <option value="unidade1">Unidade 1</option>
+              <option value="unidade2">Unidade 2</option>
+            </select>
+          </label>
+        </div>
+
+        <h4>Você deseja receber nossas comunicações?</h4>
+        <input
+          type="radio"
+          id="notificacao-email"
+          name="notificacao-email"
+          value="notificacao-email"
+        />
+        <label for="">Desejo receber todas comunicações via e-mail.</label>
+        <input
+          type="radio"
+          id="notificacao-email"
+          name="notificacao-email"
+          value="notificacao-email"
+        />
+        <label for="">Não desejo receber comunicações via e-mail.</label>
+
+        <button><a href="#">Enviar</a></button>
+      </form>
+    </section>
+  </body>
+</html>
