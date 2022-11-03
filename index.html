@@ -15,16 +15,18 @@
   </head>
   <body>
     <header id="Header">
-      <img src="./src/Logo horizontal fundo preto.svg" alt="Logo SmartFit" />
+      <img
+        id="img-logo"
+        src="./src/Logo horizontal fundo preto.svg"
+        alt="Logo SmartFit"
+        width="18%"
+      />
     </header>
 
     <section id="content">
       <div id="content-main">
         <div id="content-text">
-          <p>
-            Que tal ficar por<br />
-            dentro de todas as
-          </p>
+          <p>Que tal ficar por dentro de todas as</p>
           <h1>novidades e promoções da Smart Fit?</h1>
         </div>
         <img src="./src/02_Alpha_Alta 1.png" alt="imagem" />
@@ -40,8 +42,10 @@
             id="email"
             name="email"
             placeholder="Digite aqui..."
+            pattern="[A-Za-z\d\.\_^@]"
+            title="Digite um endereço de e-mail valido"
           />
-          <select name="email" id="email-prefixo">
+          <select name="email" id="email-prefixo" required>
             <option value="hotmail">@gmail.com</option>
             <option value="hotmail">@hotmail.com</option>
             <option value="hotmail">@outlook.com</option>
@@ -49,7 +53,7 @@
           </select>
         </div>
 
-        <div class="form-flex">
+        <div class="form-flex-stats">
           <label for="estado"
             >Estado *
             <select name="estado" id="estado">
@@ -58,7 +62,7 @@
               <option value="estado3">Unidade 2</option>
             </select>
           </label>
-          <label for="unidade" class="unidade"
+          <label for="unidade" class="unity"
             >Unidade *
             <select name="unidade" class="unidade">
               <option value="escolha">Escolha</option>
@@ -68,23 +72,23 @@
           </label>
         </div>
 
-        <h4>Você deseja receber nossas comunicações?</h4>
-        <input
-          type="radio"
-          id="notificacao-email"
-          name="notificacao-email"
-          value="notificacao-email"
-        />
-        <label for="">Desejo receber todas comunicações via e-mail.</label>
-        <input
-          type="radio"
-          id="notificacao-email"
-          name="notificacao-email"
-          value="notificacao-email"
-        />
-        <label for="">Não desejo receber comunicações via e-mail.</label>
+        <p id="quest-notification">Você deseja receber nossas comunicações?</p>
 
-        <button><a href="#">Enviar</a></button>
+        <div id="radio-notification">
+          <input type="radio" name="notification" class="radio" checked />
+          <label for="radio" class="custom-label"
+            >Desejo receber todas comunicações via e-mail.</label
+          >
+        </div>
+        <br />
+        <div id="radio-notification">
+          <input type="radio" name="notification" class="radio" />
+          <label for="radio" class="custom-label"
+            >Não desejo receber comunicações via e-mail.</label
+          >
+        </div>
+
+        <button id="button">Enviar</button>
       </form>
     </section>
   </body>
